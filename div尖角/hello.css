@@ -1,0 +1,28 @@
+.angle-wrapper {  
+    width: 300px;  
+    height: 200px;  
+    position: relative; 
+    margin:0px auto;  
+    border: 2px solid #cccccc;  
+} 
+.angle-wrapper:before {  
+    content: '';  
+    width: 0;  
+    height: 0;  
+    border: 20px solid transparent;  
+    border-left-color: #cccccc;  
+    position: absolute;  
+    left: 100%;  
+    top: 30%;   
+} 
+
+.angle-wrapper:after{  
+    content: '';  
+    width: 0;  
+    height: 0;  
+    border: 18px solid transparent;  
+    border-left-color: white;  
+    position: absolute;  
+    left: 100%;  
+    top: 31%;   
+} 
