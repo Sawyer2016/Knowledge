@@ -1,0 +1,19 @@
+.left{
+	background-color: red;
+	height:200px;
+	width:200px;
+	float:left;
+	margin-right:10px;
+}
+.right{
+	background-color:blue;
+	height:200px;
+	width:200px;
+	margin-left:10px;
+	float:right;
+}
+.main{
+	overflow: hidden;
+	background-color: gray;
+	height:200px;
+}
