@@ -1,0 +1,7 @@
+先定义一个归并函数（参数为一个包含两个有序数组的数组，left，mid，right）
+	定义两个指针指向两个数组的位置，比较两个元素大小，小的那一个提前，指针右移。
+再定义一个递归函数（参数为一个数组，left，right）
+	中间数定位mid。当left==right时return，开始回溯。否则递归（array，left，mid）和（array，mid+1，right），再执行归并函数（array，left，mid，right）
+
+复杂度O(nlogn)
+稳定
