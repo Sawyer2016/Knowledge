@@ -1,0 +1,36 @@
+/*position方法*/
+/*.main{
+	width:100%;
+	height:300px;
+	position:relative;
+
+}
+.content{
+	border:1px solid blue;
+	height:100%;
+	right:210px;
+	left:0;
+	position: absolute;
+}
+.aside{
+	border:1px solid red;
+	width:200px;
+	height:20px;
+	right:2px;
+	position: absolute;}*/
+
+/*overflow方法*/
+.main{
+	width:100%;
+	height:300px;
+}
+.content{
+	overflow: hidden;
+	height:100%;
+	border:1px solid blue;
+}
+.aside{
+	border:1px solid red;
+	width:200px;
+	height:20px;
+	float:right;}
