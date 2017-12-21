@@ -1,0 +1,6 @@
+.main:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+/*如果不加这个，父元素会没有高度*/

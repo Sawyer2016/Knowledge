@@ -28,3 +28,4 @@
 	position:relative;
 	right:-200px;
 }
+/*三个并列的div也是浮动的，main为100%，左右两列用relative布局*/

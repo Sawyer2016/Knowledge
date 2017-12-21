@@ -1,4 +1,4 @@
-
+/*本质上三个并列的div都是浮动元素，main的宽度为100%*/
     .main{
         float:left;
         width:100%;
