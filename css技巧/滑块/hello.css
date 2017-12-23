@@ -1,0 +1,36 @@
+.container{
+	width:100px;
+	height:20px;
+	border-radius:5px;
+	border:1px solid gray;
+	display:flex;
+}
+.left{
+	width:50%;
+	height:100%;
+	border-radius:5px;
+	background-color:blue;
+	color:white;
+	text-align: center;
+	transition-property:background-color color;
+	transition-duration:0.5s;
+}
+.leftChange{
+	background-color:white;
+	color:gray;
+}
+
+.right{
+	width:50%;
+	height:100%;
+	border-radius:5px;
+	background-color:white;
+	color:gray;	
+	text-align: center;
+	transition-property:background-color color;
+	transition-duration:0.5s;
+}
+.rightChange{
+	background-color:blue;
+	color:white;
+}
