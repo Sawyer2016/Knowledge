@@ -5,13 +5,17 @@ function swap(arr,index1,index2){
     arr[index2]=tmp;
 }
 function bubbleSort(arr){
+    var didSwap=false
     for (var num=arr.length-2;num>=0;num--){
         for(var i=0;i<=num;i++){
             if(arr[i]>arr[i+1])
             {
                 swap(arr,i,i+1)
+                didSwap=true
             }
         }
+        if(didSwap==false)
+            return
     }
     return arr;
 }

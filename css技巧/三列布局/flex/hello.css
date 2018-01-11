@@ -1,0 +1,19 @@
+.box{
+	height:100%;
+	display: flex;
+	justify-content: space-between;
+}
+.left, .right{
+	height: 100%;
+	background: gray;
+	width:200px;
+}
+.center{
+	flex-grow: 1;
+	background: red;
+	height:100%;
+}
+html,body{
+	height:100%;
+	margin:0;
+}
