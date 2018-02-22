@@ -19,6 +19,10 @@ window.onscroll = function(){
         if(aLi[i].getBoundingClientRect().top<document.body.clientHeight){ 
            createImg(aLi[i])
         }
+        // if(i==5){
+            //  dom元素到页面可视窗口顶部的距离                   可视窗口高度
+        //     console.log(aLi[i].getBoundingClientRect().top, document.body.clientHeight)
+        // }   
     } 
 }
 

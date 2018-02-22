@@ -1,0 +1,25 @@
+.box{
+	border-radius:20px;
+	width:80px;
+	border:1px solid black;
+	height:20px;
+}
+.switch{
+	border-radius: 20px;
+	background-color: lightblue;
+	width:50%;
+	height:20px;
+	position: relative;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode:forwards;
+}
+
+@keyframes moveSwitch {
+	from {left:0;}
+	to {left:50%;}
+}
+@keyframes moveBack {
+	from {left:50%;}
+	to {left:0%;}
+}
