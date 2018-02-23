@@ -1,4 +1,4 @@
-function buildHeap(arr,n){
+，jkuyfunction buildHeap(arr,n){
   for(var i=Math.floor(n/2-1);i>=0;i--){
     heapify(arr,i,n)
   }
