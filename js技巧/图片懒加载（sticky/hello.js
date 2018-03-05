@@ -13,7 +13,8 @@ function createImg(obj){
 }
 
 let node =document.getElementById('hello')
-let originalTop=node.offsetTop    
+let originalTop=node.offsetTop   
+console.log(originalTop) 
 /* 滚动实时计算所到区域并进行相关计算 */
 window.onscroll = function(){
     for(var i=0;i<aLi.length;i++){
@@ -26,9 +27,9 @@ window.onscroll = function(){
         // }   
     } 
     if(window.scrollY>=originalTop){
-        node.classList.add('original')
+        node.classList.add('fixed')
     }else{
-        node.classList.remove('original')
+        node.classList.remove('fixed')
     }
 }
 
