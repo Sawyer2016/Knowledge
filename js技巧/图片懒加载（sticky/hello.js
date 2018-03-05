@@ -24,6 +24,8 @@ window.onscroll = function(){
         //     console.log(aLi[i].getBoundingClientRect().top, document.body.clientHeight)
         // }   
     } 
+        window.scrollY > node.offsetTop ? node.classList.add('fixed'):node.classList.remove('fixed')
+
 }
 
 /* 页面加载完便执行一次滚动函数 */
