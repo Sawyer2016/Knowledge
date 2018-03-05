@@ -12,7 +12,8 @@ function createImg(obj){
     }
 }
 
-    
+let node =document.getElementById('hello')
+let originalTop=node.offsetTop    
 /* 滚动实时计算所到区域并进行相关计算 */
 window.onscroll = function(){
     for(var i=0;i<aLi.length;i++){
@@ -24,8 +25,11 @@ window.onscroll = function(){
         //     console.log(aLi[i].getBoundingClientRect().top, document.body.clientHeight)
         // }   
     } 
-        window.scrollY > node.offsetTop ? node.classList.add('fixed'):node.classList.remove('fixed')
-
+    if(window.scrollY>=originalTop){
+        node.classList.add('original')
+    }else{
+        node.classList.remove('original')
+    }
 }
 
 /* 页面加载完便执行一次滚动函数 */
