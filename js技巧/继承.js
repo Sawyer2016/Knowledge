@@ -77,12 +77,19 @@ function createAnother(original){
  }
 
 //寄生组合式继承
+// function inheritPrototype(subType, superType){
+//     var prototype = object(superType.prototype);
+//     prototype.constructor = subType;
+//     subType.prototype = prototype;
+// }
 function inheritPrototype(subType, superType){
-    var prototype = object(superType.prototype);
-    prototype.constructor = subType;
-    subType.prototype = prototype;
-}
+    function F(){}
+    F.prototype=superType.prototype
+    var proto=new F()
+    proto.constructor=subType
+    subType.prototype = proto
 
+}
 function SuperType(name){
     this.name = name;
     this.colors = ["red", "blue", "green"];
