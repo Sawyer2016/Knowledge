@@ -1,0 +1,16 @@
+html, body{
+	height:100%;
+	margin:auto;
+}
+.parent{
+	width:400px;
+	height:100px;
+	border:1px solid red;
+	display: flex
+}
+.column{
+	flex-grow: 1;
+}
+.column+ .column{
+	margin-left:20px;
+}
