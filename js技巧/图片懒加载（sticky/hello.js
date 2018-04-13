@@ -37,3 +37,19 @@ window.onscroll = function(){
 window.onload = function(){
     window.onscroll();
 }
+
+//先把地址放入img的data-src属性里，当页面加载到图片位置时再放到src里
+// function getsrc(obj){
+//     let src=obj.getAttribute('data-src')
+//     obj.setAttribute("src",src)
+// }
+// window.onscroll=function(){
+//     let imgs=document.getElementsByTagName('img')
+//     for(let i=0;i<imgs.length;i++){
+//         if(imgs[i].getBoundingClientRect().top<document.body.clientHeight){
+//             if(i<=5)
+//                 getsrc(imgs[i])
+            
+//         }
+//     }
+// }
