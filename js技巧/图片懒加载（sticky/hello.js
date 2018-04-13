@@ -13,7 +13,7 @@ function createImg(obj){
 }
 
 let node =document.getElementById('hello')
-let originalTop=node.offsetTop   
+let originalTop=node.getBoundingClientRect().top   
 console.log(originalTop) 
 /* 滚动实时计算所到区域并进行相关计算 */
 window.onscroll = function(){
