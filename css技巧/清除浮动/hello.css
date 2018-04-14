@@ -4,3 +4,13 @@
 	clear:both;
 }
 /*如果不加这个，父元素会没有高度*/
+/*相当于添加了一个非浮动的子元素，父元素现在要考虑到子元素的高度，子元素在浮动元素下面*/
+/*.clearfix:after {
+content: "";
+display: block;
+height: 0;
+clear: both;
+}
+.clearfix {
+zoom: 1;
+}*/
