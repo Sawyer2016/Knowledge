@@ -1,0 +1,36 @@
+img{
+	max-width: 100%;
+	max-height:100%;
+}
+
+img:hover{
+	/*模糊效果*/
+	filter:blur(1px); 
+
+	/*明亮效果*/
+	filter: brightness(2);
+    
+    /*对比度*/
+	filter: contrast(200%);
+	
+	/*图片阴影*/
+	filter: drop-shadow(20px 20px 50px blue);
+
+	/*灰度*/
+	filter: grayscale(50%);
+
+	/*色彩变了？*/
+	filter: hue-rotate(90deg);
+
+	filter: invert(75%);
+	
+	/*透明度*/
+	filter: opacity(25%);
+
+}
+
+/*hover的时候高亮*/
+img:hover{
+	transition:filter 0.1s;
+	  filter: brightness(1.1) contrast(110%);
+}

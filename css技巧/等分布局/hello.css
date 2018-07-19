@@ -11,6 +11,8 @@ html, body{
 .column{
 	flex-grow: 1;
 }
+
+/*紧跟着.column的.column元素*/
 .column+ .column{
 	margin-left:20px;
 }

@@ -1,13 +1,8 @@
-function createScript(url){
-  var node=document.getElementsByTagName("head")[0]
-  var sc=document.createElement('script')
-  sc.type="text/javascript"
-  sc.src=url
-  node.appendChild(sc)
-}
-function callback(data){
-  console.log(data)
-}
-function getjson(){
-  createScript("img/json.js?callback=callback")
+function handleResponse(response){
+            console.log(response);
+    }
+function getInfo(){
+	 var script = document.createElement("script");
+        script.src = "https://api.douban.com/v2/book/search?q=javascript&count=1&callback=handleResponse";
+        document.body.insertBefore(script, document.body.firstChild); 
 }

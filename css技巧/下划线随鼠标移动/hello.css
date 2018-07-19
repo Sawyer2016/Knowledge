@@ -1,0 +1,36 @@
+html, body{
+	height:100%;
+	margin:auto;
+	
+}
+ul{
+	list-style: none;
+
+}
+.item{
+	display: inline-block;
+	position: relative;
+
+}
+.item+.item{
+	margin-left:20px;
+}
+.item::before{
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 100%;
+    transition: all 0.2s;
+    transition-delay: 0.1s;
+    border-bottom: 2px solid black;
+}
+
+.item:hover::before {
+	left:0;
+    width: 100%;
+}
+.item:hover+.item::before{
+	left:0;
+}
