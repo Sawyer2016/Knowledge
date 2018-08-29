@@ -22,3 +22,6 @@ const enableScroll = () => {
   window.onkeydown = null;
   document.body.setAttribute('style', 'overflow-y:');
 };
+
+//2
+//JSON.parse(JSON.stringify(obj));
