@@ -18,3 +18,6 @@ function deepCopy(obj) {
     }
     return result;
 }
+
+//2
+//JSON.parse(JSON.stringify(goods))

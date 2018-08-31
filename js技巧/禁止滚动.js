@@ -6,6 +6,13 @@ function keydown(e) {
     }
   });
 }
+function stopEvent(e) {
+    let event = e || window.event;
+    if (event.preventDefault) {
+        event.preventDefault();
+    }
+    event.returnValue = false;
+}
 const disableScroll = () => {
   if (window.addEventListener) {
     window.addEventListener('DOMMouseScroll', stopEvent, false); // FF
